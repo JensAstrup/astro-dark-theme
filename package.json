@@ -1,6 +1,6 @@
 {
     "name": "astro-dark-theme",
-    "displayName": "Converted from Customized JetBrains Dark Theme",
+    "displayName": "Customized JetBrains Dark Theme",
     "description": "A VS Code theme converted from JetBrains' Dark color scheme",
     "repository": {
         "type": "git",
