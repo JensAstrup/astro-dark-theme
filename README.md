@@ -31,8 +31,3 @@ If you find any inconsistencies or have suggestions for improvements, please fee
 ## License
 
 This theme is available under the MIT License.
-
-## Changelog
-
-### 0.0.1
-Initial Release
