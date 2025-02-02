@@ -2,6 +2,10 @@
     "name": "astro-dark-theme",
     "displayName": "Converted from Customized JetBrains Dark Theme",
     "description": "A VS Code theme converted from JetBrains' Dark color scheme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jensastrup/astro-dark-theme"
+    },
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.60.0"
@@ -18,5 +22,16 @@
                 "path": "./themes/Dark-Converted-From-JetBrains.json"
             }
         ]
-    }
+    },
+    "files": [
+        "themes",
+        "README.md",
+        "package.json",
+        "media"
+    ],
+    "vscodeignore": [
+        ".vscode/**",
+        ".gitignore",
+        "**/*.vsix"
+    ]
 }
