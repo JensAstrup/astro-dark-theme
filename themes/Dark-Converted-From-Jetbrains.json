@@ -47,7 +47,7 @@
       "scope": ["invalid.illegal"],
       "settings": {
         "foreground": "#f75464",
-        "fontStyle": "underline" // wave underline in JetBrains
+        "fontStyle": "underline"
       }
     },
 
@@ -77,7 +77,7 @@
     // --- Strings & Escapes ---
     //
     {
-      "scope": ["string.quoted.single.tsx", "string"],
+      "scope": ["string"],
       "settings": {
         "foreground": "#6aab73"
       }
@@ -89,7 +89,7 @@
       }
     },
     {
-      "scope": "invalid.escape",
+      "scope": ["invalid.escape"],
       "settings": {
         "foreground": "#f75464"
       }
@@ -106,7 +106,7 @@
     },
 
     //
-    // --- Numbers (DEFAULT_NUMBER) ---
+    // --- Numbers ---
     //
     {
       "scope": [
@@ -119,8 +119,7 @@
     },
 
     //
-    // --- True Constants (DEFAULT_CONSTANT) ---
-    //     (Includes built-in constants, enum members, language-level constants.)
+    // --- Constants ---
     //
     {
       "scope": [
@@ -131,31 +130,8 @@
         "support.constant"
       ],
       "settings": {
-        "foreground": "#c77dbb"
-      }
-    },
-
-    //
-    // --- Operators, Braces, Punctuation ---
-    //
-    {
-      "scope": [
-        "keyword.operator",
-        "punctuation",
-        "meta.brace",
-        "meta.bracket",
-        "meta.paren",
-        "punctuation.definition.parameters.start.tsx",
-        "punctuation.definition.parameters.end.tsx",
-        "meta.parameters.tsx",
-        "meta.arrow.tsx",
-        "meta.block.tsx",
-        "meta.arrow.tsx",
-        "meta.import.tsx",
-        "source.tsx"
-      ],
-      "settings": {
-        "foreground": "#bcbec4"
+        "foreground": "#c77dbb",
+        "fontStyle": "bold"
       }
     },
 
@@ -174,7 +150,7 @@
     },
 
     //
-    // --- Classes, Types, Storage ---
+    // --- Classes, Types ---
     //
     {
       "scope": [
@@ -190,7 +166,7 @@
     },
 
     //
-    // --- Variables, Identifiers ---
+    // --- Variables ---
     //
     {
       "scope": [
@@ -204,42 +180,16 @@
         "foreground": "#bcbec4"
       }
     },
-    {
-      "scope": [
-        "variable.other.readwrite.instance",
-        "this",
-        "self"
-      ],
-      "settings": {
-        "foreground": "#c77dbb"
-      }
-    },
 
     //
-    // --- Optional: bold for property-values ---
-    //
-    {
-      "scope": [
-        "support.constant.property-value",
-        "support.constant.font-name"
-      ],
-      "settings": {
-        "foreground": "#c77dbb",
-        "fontStyle": "bold"
-      }
-    },
-
-    //
-    // --- HTML / XML Tags, Attributes ---
+    // --- HTML / XML Tags ---
     //
     {
       "scope": [
         "entity.name.tag",
         "punctuation.definition.tag",
         "meta.tag.html",
-        "meta.tag.xml",
-        "tag.html",
-        "tag.xml"
+        "meta.tag.xml"
       ],
       "settings": {
         "foreground": "#d5b778"
@@ -247,19 +197,8 @@
     },
     {
       "scope": [
-        "entity.name.tag.custom",
-        "entity.name.tag.html.jsx",
-        "entity.name.tag.xml"
-      ],
-      "settings": {
-        "foreground": "#2fbaa3"
-      }
-    },
-    {
-      "scope": [
         "entity.other.attribute-name",
-        "meta.tag.attributes",
-        "entity.name.attribute-name"
+        "meta.tag.attributes"
       ],
       "settings": {
         "foreground": "#bcbec4"
@@ -267,34 +206,20 @@
     },
 
     //
-    // --- TSX ---
+    // --- JSX/TSX Components ---
     //
     {
       "scope": [
-        "support.class.component.tsx"
+        "support.class.component.tsx",
+        "support.class.component.jsx"
       ],
       "settings": {
-        "foreground": "#9C9CFF"
+        "foreground": "#9c9cff"
       }
     },
 
     //
-    // --- Markdown Links ---
-    //
-    {
-      "scope": [
-        "string.other.link.title.markdown",
-        "string.other.link.description.markdown",
-        "markup.underline.link"
-      ],
-      "settings": {
-        "foreground": "#56a8f5",
-        "fontStyle": "underline"
-      }
-    },
-
-    //
-    // --- Regex ---
+    // --- RegExp ---
     //
     {
       "scope": [
@@ -303,36 +228,6 @@
       ],
       "settings": {
         "foreground": "#42c3d4"
-      }
-    },
-
-    //
-    // === CUSTOM OVERRIDES BELOW ===
-    //
-
-    // 1) variable.other.constant.tsx => #A9B7C6
-    {
-      "scope": "variable.other.constant.tsx",
-      "settings": {
-        "foreground": "#A9B7C6"
-      }
-    },
-
-    // 2) string.quoted.single.tsx => #6AAB73
-    // (already covered by "string", but this is explicitly for single-quoted TSX)
-    {
-      "scope": "string.quoted.single.tsx",
-      "settings": {
-        "foreground": "#6AAB73"
-      }
-    },
-
-    // 3) entity.name.function.tsx => #56A8F5
-    // (already part of the "entity.name.function" rule, but ensures TSX specifically)
-    {
-      "scope": "entity.name.function.tsx",
-      "settings": {
-        "foreground": "#56A8F5"
       }
     }
   ]
